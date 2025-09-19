@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const code = urlParams.get('code');
+        
+        if (code) {
+            document.write(`
+                <h1>Код авторизации получен!</h1>
+                <p>Код: <strong>${code}</strong></p>
+                <p>Скопируйте этот код</p>
+            `);
+            console.log('Code:', code);
+        }
+    </script>
+</body>
+</html>
